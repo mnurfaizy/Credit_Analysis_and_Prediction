@@ -1,1 +1,1 @@
-# Credit_Analysis_and_Prediction
+# Credit Analysis and Prediction
