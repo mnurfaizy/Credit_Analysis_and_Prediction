@@ -61,9 +61,15 @@ After data preparation, multiple Machine Learning classifiers were trained and e
 
 Among all models, Random Forest demonstrated the most consistent and well-balanced performance across all metrics (Accuracy, Precision, Recall, and F1-Score). Given the imbalance in the dataset, prioritizing precision and recall over mere accuracy is essential to minimize business risks associated with false negatives (missed high-risk borrowers) and false positives (incorrectly rejecting good borrowers).
 
-
+![ROCAUC](ROC_AUC.png)
 
 The ROC curve further validates the robustness of the Random Forest model, achieving an AUC score of 0.9678, indicating excellent discriminative ability.
+
+## Model Performance & Selection:
+
+- Among multiple classifiers (Logistic Regression, Decision Tree, XGBoost, and Random Forest), Random Forest emerged as the best-performing model with balanced accuracy (91%), precision (91%), recall (91%), and F1-score (91%).
+- Feature selection using SelectKBest (k=10) was explored, but results indicated that using the full feature set produced superior predictive performance.
+- The ROC-AUC score of 0.9678 confirmed the model's strong ability to distinguish between low-risk and high-risk applicants.
 
 
 
